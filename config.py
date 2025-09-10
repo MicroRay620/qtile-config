@@ -32,6 +32,7 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+# This is the windows key
 mod = "mod4"
 terminal = guess_terminal()
 
@@ -74,7 +75,7 @@ keys = [
     Key(
         [mod],
         "f",
-        lazy.window.toggle_fullscreen(),
+       lazy.window.toggle_fullscreen(),
         desc="Toggle fullscreen on the focused window",
     ),
     Key([mod], "t", lazy.window.toggle_floating(), desc="Toggle floating on the focused window"),
